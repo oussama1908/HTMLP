@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    
+*. {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f6f6f6;
+  color: #333;
+}
+
+
+header {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+
+section {
+  padding: 40px;
+  background-color: #fff;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+section p {
+  margin-bottom: 15px;
+}
+
+section ul {
+  list-style-type: disc;
+  margin-bottom: 20px;
+}
+
+section table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+}
+
+section th, section td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #555;
+}
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+    .back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      display: none;
+      width: 50px;
+      height: 50px;
+      background-color: #333;
+      color: #fff;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      font-size: 24px;
+      text-align: center;
+      line-height: 50px;
+    }
+
+    .back-to-top:hover {
+      background-color: #555;
+    }
+    #home {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+
+}
+ h1 {
+  text-align: center;
+}
+
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+  <h1>Welcome to My Portfolio</h1>
+  <br>
+  <section id="home" style="background-image: url('/123.png');">
+    
+    
+    
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+        Welcome to my portfolio! I am a passionate and dedicated  in my work.
+        
+        Feel free to explore my portfolio and get in touch with me for any inquiries or collaborations!
+      </p>  </section>
+
+  
+<section id="work">
+    <h2>My Work</h2>
+    <div class="work-gallery">
+      <figure>
+        <img src="/checkout commit .jpg" alt="Example of my work 1">
+        <figcaption>github  1</figcaption>
+      </figure>
+      <figure>
+        <img src="/commit third text .jpg" alt="Example of my work 2">
+        <figcaption>Commit</figcaption>
+      </figure>
+      <figure>
+        <img src="/push to master1 .jpg" alt="Example of my work 3">
+        <figcaption>Push</figcaption>
+      </figure>
+      <figure>
+        <img src="/commit third text .jpg" alt="Example of my work 4">
+        <figcaption>Commit 4</figcaption>
+      </figure>
+      <figure>
+        <img src="/last global .jpg" alt="Example of my work 5">
+      </figure>
+    </div>
+  </section>
+  
+
+  
+<section>
+    <section>
+        <h2>My Video</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/38YHEpjWcOo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+      
+      
+      <section>
+        <h2>My Audio</h2>
+        <audio controls>
+          <source src="/firstsong.mp3" type="audio/mpeg">
+          Your browser does not support the audio tag.
+        </audio>
+      </section>
+  </section>
+  
+ 
+  
+
+  
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      <input type="submit" value="Send">
+    </form>
+  </section>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" onclick="scrollToTop()">&#8593;</button>
+
+  
+  <footer>
+    <p> Thanks for the post </p>
+  </footer>
+
+  <script>
+    // Function to scroll to the top of the page
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+
+    //scroll position
+    window.addEventListener('scroll', function() {
+      var button = document.querySelector('.back-to-top');
+      if (window.pageYOffset > 300) {
+        button.style.display = 'block';
+      } else {
+        button.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
